@@ -3,8 +3,8 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="aboutUs pt-20 p-28 flex justify-center pb-0 space-x-9 ">
-      <div className="imageDiv p-6">
+    <div className="aboutUs pt-20 p-28 flex justify-center pb-0 space-x-9 bg-gray-100  ">
+      <div className="imageDiv p-6 flex item-center">
         <Image src="/images/about.png" height={400} width={400} />
       </div>
       <div className="desc w-1/2 flex flex-col   p-6">
@@ -23,7 +23,7 @@ const AboutUs = () => {
           quibusdam saepe laborum, vero ea magnam ipsa provident animi cum.
           Numquam, dolores! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi doloremque dignissimos magnam est perferendis cupiditate qui laborum magni eaque vitae, sapiente placeat eveniet distinctio assumenda voluptates eligendi aliquid autem.
         </p>
-        <button className="text-left mt-2">
+        <button className=" mt-2  bg-[#0A1128] w-24 flex justify-center text-center text-white py-2 rounded-3xl">
             AboutUs
         </button>
       </div>
