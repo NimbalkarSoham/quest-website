@@ -12,6 +12,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { useSession } from "next-auth/react";
+
 const products = [
     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
     { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
@@ -28,6 +30,8 @@ function classNames(...classes) {
 }
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const {data: session} = useSession();
   return (
     <header className="bg-[#090f1b]">
       <nav
@@ -121,12 +125,16 @@ const Navbar = () => {
           <a href="#" className="text-sm font-semibold leading-6 text-white">
             Features
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Marketplace
+          <a href="/blogs" className="text-sm font-semibold leading-6 text-white">
+            Blogs
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-white">
             Company
           </a>
+          {session?.user.email == "soham.nimbalkar08@gmail.com" && 
+          <a href="/add-blog" className="text-sm font-semibold leading-6 text-white">
+            Add blog
+          </a> }
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-white">
@@ -198,10 +206,10 @@ const Navbar = () => {
                   Features
                 </a>
                 <a
-                  href="#"
+                  href="/blogs"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                 >
-                  Marketplace
+                  Blogs
                 </a>
                 <a
                   href="#"
@@ -209,6 +217,11 @@ const Navbar = () => {
                 >
                   Company
                 </a>
+                {session?.user.email == "soham.nimbalkar08@gmail.com" && 
+                <a href="/add-blog" className="text-sm font-semibold leading-6 text-white">
+                  Add blog
+                </a> 
+                }
               </div>
            
             </div>
