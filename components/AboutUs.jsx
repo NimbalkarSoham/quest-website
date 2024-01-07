@@ -23,7 +23,7 @@ const AboutUs = () => {
           quibusdam saepe laborum, vero ea magnam ipsa provident animi cum.
           Numquam, dolores! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi doloremque dignissimos magnam est perferendis cupiditate qui laborum magni eaque vitae, sapiente placeat eveniet distinctio assumenda voluptates eligendi aliquid autem.
         </p>
-        <button className=" mt-2  bg-[#0A1128] w-24 flex justify-center text-center text-white py-2 rounded-3xl">
+        <button className=" mt-5  bg-[#0A1128] w-24 flex justify-center text-center text-white py-2 rounded-3xl">
             AboutUs
         </button>
       </div>
