@@ -23,7 +23,7 @@ const Blog = ({ params }) => {
   }, [])
   
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center bg-gray-200'>
       <div className='w-full'>
         <div className="relative h-[400px] w-full overflow-hidden">
           <div className={`absolute inset-0`}>
@@ -42,7 +42,7 @@ const Blog = ({ params }) => {
       </div>
       
 
-      <div id='content' className='flex flex-col items-center w-3/4 justify-center mt-5'></div>
+      <div id='content' className='flex flex-col items-center w-3/4 justify-center pt-9 pb-12 bg-white px-14'></div>
     
     </div>
   )
