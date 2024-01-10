@@ -60,16 +60,16 @@ const blogs = () => {
       <ImageSlider images={images} />
       <div className="feed flex flex-col px-4 sm:px-4 md:px-14 pt-16">
         <div className="title">
-          <h2 className='text-6xl font-bold'>Latest Blogs</h2>
+          <h2 className='text-5xl md:text-6xl font-bold'>Latest Blogs</h2>
         </div>
-        <div className="filters bg-slate-200 w-fit px-9 py-2 my-3 rounded-lg">
-          <ul className='flex flex-row gap-3.5 text-base'>
+        <div className='border-none'>
+          <ul className='flex gap-x-3'>
             {categories.map((category) => (
-              <p onClick={() => handleTagClick(category)} className='cursor-pointer'>{category}</p>
+              <p onClick={() => handleTagClick(category)} className='border border-gray-400 bg-slate-200 w-fit px-5 py-2 my-3 rounded-lg cursor-pointer'>{category}</p>
             ))}
           </ul>
         </div>
-        <div className="feedList my-8 flex flex-wrap gap-8">
+        <div className="my-8 space-y-10 grid grid-cols-1 md:grid-cols-3 md:space-y-0">
           {posts?.map((post) => (  
             <BlogCard post={post}/>
           ))}

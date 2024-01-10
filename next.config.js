@@ -1,11 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true,
+    // appDir: true,
     serverComponentsExternalPackages: ["mongoose"],
   },
   images: {
-    domains: ['res.cloudinary.com'],
+    remotePatterns: [
+      {
+        hostname: "res.cloudinary.com",
+        protocol: "https",
+      },
+    ],
   },
   webpack(config) {
     config.experiments = {
