@@ -38,8 +38,8 @@ const Council = () => {
       <div>
         <h1 className="text-6xl font-bold text-center mb-10">OUR TEAM</h1>
       </div>
-      <div className="filters bg-slate-200 w-fit px-9 py-2 my-3 rounded-lg">
-        <ul className='flex flex-row gap-3.5 text-base'>
+      <div className="filters bg-slate-200 w-[50%] mx-auto px-9 py-2 my-3 rounded-lg">
+        <ul className='flex flex-row justify-around gap-3.5 text-base'>
           <li><p onClick={() => handleTagClick("S.E")} className='cursor-pointer'>S.E.</p></li>
           <li><p onClick={() => handleTagClick("T.E")} className='cursor-pointer'>T.E.</p></li>
           <li><p onClick={() => handleTagClick("B.E")} className='cursor-pointer'>B.E.</p></li>
