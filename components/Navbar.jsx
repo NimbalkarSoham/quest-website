@@ -23,13 +23,21 @@ const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
   { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
+
+const admins = [
+  "2021.soham.nimbalkar@ves.ac.in",
+  "2021.anket.kadam@ves.ac.in",
+  "2020.manav.tanna@ves.ac.in",
+  "2020.shreyansh.singh@ves.ac.in",
+  "2020.urvi.pandit@ves.ac.in",
+];
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const {data: session} = useSession();
+  const { data: session } = useSession();
   return (
     <header className="bg-[#090f1b]">
       <nav
@@ -62,16 +70,23 @@ const Navbar = () => {
           <a href="/events" className="text-sm font-semibold leading-6 text-white">
             Events
           </a>
-          <a href="/blogs" className="text-sm font-semibold leading-6 text-white">
+          <a
+            href="/blogs"
+            className="text-sm font-semibold leading-6 text-white"
+          >
             Blogs
           </a>
           <a href="/council" className="text-sm font-semibold leading-6 text-white">
             Council
           </a>
-          {session?.user.email == "soham.nimbalkar08@gmail.com" && 
-          <a href="/add-blog" className="text-sm font-semibold leading-6 text-white">
-            Add blog
-          </a> }
+          {admins.includes(session?.user.email) && (
+            <a
+              href="/add-blog"
+              className="text-sm font-semibold leading-6 text-white"
+            >
+              Add blog
+            </a>
+          )}
         </Popover.Group>
         
       </nav>
@@ -150,11 +165,14 @@ const Navbar = () => {
                 >
                   Company
                 </a>
-                {session?.user.email == "soham.nimbalkar08@gmail.com" && 
-                <a href="/add-blog" className="text-sm font-semibold leading-6 text-white">
-                  Add blog
-                </a> 
-                }
+                {session?.user.email == "soham.nimbalkar08@gmail.com" && (
+                  <a
+                    href="/add-blog"
+                    className="text-sm font-semibold leading-6 text-white"
+                  >
+                    Add blog
+                  </a>
+                )}
               </div>
             </div>
           </div>
