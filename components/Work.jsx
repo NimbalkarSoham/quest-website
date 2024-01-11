@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Work = () => {
@@ -34,9 +35,9 @@ const Work = () => {
           width={250}
         />
       </div>
-      <button className="bg-[#0A1128] w-24 px-1 text-white py-2 rounded-3xl">
+      <Link href={'/work'} className="bg-[#0A1128] w-24 px-4 text-white py-2 rounded-3xl">
         Our work
-      </button>
+      </Link>
     </div>
   );
 };

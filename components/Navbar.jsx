@@ -65,7 +65,7 @@ const Navbar = () => {
           <a href="/blogs" className="text-sm font-semibold leading-6 text-white">
             Blogs
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <a href="/council" className="text-sm font-semibold leading-6 text-white">
             Council
           </a>
           {session?.user.email == "soham.nimbalkar08@gmail.com" && 
