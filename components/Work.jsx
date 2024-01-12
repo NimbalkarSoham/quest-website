@@ -5,7 +5,7 @@ import React from "react";
 const Work = () => {
   return (
     <div className="Main flex-row text-center mt-14">
-      <div className="heading text-3xl font-bold mb-7">See Our Work</div>
+      <div className="heading text-3xl font-bold mb-7">See Our Event</div>
       <div className="para px-8 sm:px-24">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae
         culpa pariatur vitae quod, laboriosam molestias modi praesentium ratione
@@ -35,9 +35,9 @@ const Work = () => {
           width={250}
         />
       </div>
-      <Link href={'/work'} className="bg-[#0A1128] w-24 px-4 text-white py-2 rounded-3xl">
-        Our work
-      </Link>
+      <a href='/events' className="bg-[#0A1128] w-24 px-4 text-white py-2 rounded-3xl">
+        Our event
+      </a>
     </div>
   );
 };

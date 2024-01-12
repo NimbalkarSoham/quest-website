@@ -22,7 +22,7 @@ const Footer = () => {
     <section className="flex flex-row items-center bg-[#0A142F] py-4">
         <div className="footer text-white flex flex-col items-center gap-5 w-full">
             <div className="text-2xl">
-                Quest<span className="text-cyan-300"> IT</span>
+                Quest<span className="text-cyan-300">IT</span>
             </div>
             <div className="flex flex-row">
                 <a href="./" className="px-4">Home</a>
