@@ -142,145 +142,162 @@ const addBlog = () => {
   };
 
   return (
-    <section className="py-10 mx-4 md:mx-10">
-      <h1 className="font-extrabold text-4xl pb-5">Create a new blog</h1>
-      <div className="tools flex flex-col gap-4">
-        <div className="details flex md:flex-row flex-col gap-4">
-          <div className="add-subheader bg-slate-300 px-4 py-2 rounded-md h-fit">
-            <p>&#42;Title:</p>
-            <input
-              type="text"
-              className="px-4 py-2 border-[1px] border-gray-500 rounded"
-              placeholder="Title for your blog"
+    <section className="py-10 mx-4 md:mx-10 flex flex-col items-center">
+      <div className="editor bg-white w-3/5 p-6 rounded-md">
+        <h1 className="font-bold text-4xl pb-5 text-center">
+          Create a new blog
+        </h1>
+        <div className="tools flex flex-col gap-4 items-center">
+          <div className="details flex md:flex-row flex-col gap-4">
+            <div className="add-subheader bg-slate-300 px-4 py-2 rounded-md h-fit">
+              <p>
+                <span className="text-red-500 font-bold">&#42;</span>Title:
+              </p>
+              <input
+                type="text"
+                className="px-4 py-2 border-[1px] border-gray-500 rounded"
+                placeholder="Title for your blog"
+                onChange={(e) =>
+                  setBlogTitle({ ...blogTitle, title: e.target.value })
+                }
+              />
+            </div>
+
+            <div className="add-subheader bg-slate-300 px-4 py-2 rounded-md h-fit">
+              <p>
+                <span className="text-red-500 font-bold">&#42;</span>category:
+              </p>
+              <input
+                type="text"
+                className="px-4 py-2 border-[1px] border-gray-500 rounded"
+                placeholder="#category"
+                onChange={(e) =>
+                  setBlogTitle({ ...blogTitle, category: e.target.value })
+                }
+              />
+            </div>
+          </div>
+
+          <div className="add-subheader bg-slate-300 px-8 py-2 rounded-md h-fit w-4/5">
+            <p>
+              <span className="text-red-500 font-bold">&#42;</span>Description:
+            </p>
+            <textarea
+              // type="text"
+              // rows={50}
+              // cols={140}
+              className="px-4 py-2 border-[1px] border-gray-500 rounded w-full"
+              placeholder="Description for your blog"
               onChange={(e) =>
-                setBlogTitle({ ...blogTitle, title: e.target.value })
+                setBlogTitle({ ...blogTitle, description: e.target.value })
               }
             />
           </div>
 
-          <div className="add-subheader bg-slate-300 px-4 py-2 rounded-md h-fit">
-            <p>&#42;category:</p>
-            <input
-              type="text"
-              className="px-4 py-2 border-[1px] border-gray-500 rounded"
-              placeholder="#category"
-              onChange={(e) =>
-                setBlogTitle({ ...blogTitle, category: e.target.value })
-              }
-            />
+          <div className="flex flex-row gap-4">
+            <div className="add-header bg-slate-300 rounded-md h-fit">
+              <button
+                className="px-4 py-2"
+                onClick={() => {
+                  toggleClass("textbox");
+                }}
+              >
+                Add Text
+              </button>
+            </div>
+
+            <div className="add-subheader bg-slate-300 rounded-md h-fit">
+              <button
+                className="px-4 py-2"
+                onClick={() => {
+                  toggleClass("img-input");
+                }}
+              >
+                Add Image
+              </button>
+            </div>
           </div>
-        </div>
-
-        <div className="add-subheader bg-slate-300 px-4 py-2 rounded-md h-fit">
-          <p>&#42;Description:</p>
-          <textarea
-            // type="text"
-            // rows={50}
-            // cols={140}
-            className="px-4 py-2 border-[1px] border-gray-500 rounded"
-            placeholder="Description for your blog"
-            onChange={(e) =>
-              setBlogTitle({ ...blogTitle, description: e.target.value })
-            }
-          />
-        </div>
-
-        <div className="flex flex-row gap-4">
-          <div className="add-header bg-slate-300 rounded-md h-fit">
+          <div
+            className="bg-slate-300 w-fit p-3 my-2 hidden rounded-md flex-col"
+            id="textbox"
+          >
+            <textarea
+              name=""
+              id="input-text"
+              cols="30"
+              rows="10"
+              className="Header border-2 border-black h-20 w-96 pt-0 rounded-md"
+              placeholder="text"
+            ></textarea>
             <button
-              className="px-4 py-2"
+              className="bg-slate-600 px-4 py-2 rounded-md mb-2 ml-2"
               onClick={() => {
-                toggleClass("textbox");
+                document.getElementById("input-text").value = "";
               }}
             >
-              Add Text
+              Clear
             </button>
+            <div className="btns flex flex-row gap-4">
+              <button
+                className="bg-slate-600 px-4 py-2 rounded-md"
+                onClick={() => {
+                  handleAddHead();
+                }}
+              >
+                Add as Heading
+              </button>
+              <button
+                className="bg-slate-600 px-4 py-2 rounded-md"
+                onClick={() => {
+                  handleAddSubhead();
+                }}
+              >
+                Add as Subheading
+              </button>
+              <button
+                className="bg-slate-600 px-4 py-2 rounded-md"
+                onClick={() => {
+                  handleAddPara();
+                }}
+              >
+                Add as Paragraph
+              </button>
+            </div>
           </div>
-
-          <div className="add-subheader bg-slate-300 rounded-md h-fit">
-            <button
-              className="px-4 py-2"
-              onClick={() => {
-                toggleClass("img-input");
-              }}
-            >
-              Add Image
-            </button>
+          <div
+            className="bg-slate-300 w-fit hidden p-3 m-3 rounded"
+            id="img-input"
+          >
+            <form onSubmit={handleAddImage} className="flex gap-3">
+              <input
+                type="file"
+                name="file"
+                placeholder="Upload an image"
+                onChange={handleImageChange}
+                className="Header border-2 border-black p-2 rounded"
+                id="input-img"
+              />
+              <button
+                type="submit"
+                className="bg-slate-900 text-white px-5 rounded-lg"
+              >
+                {submitting ? `Uploading..` : `Add Image`}
+              </button>
+            </form>
           </div>
         </div>
       </div>
+
+      <h1 className="text-xl font-bold mt-4">Preview:</h1>
       <div
-        className="bg-slate-300 w-fit p-3 my-2 hidden rounded-md flex-col"
-        id="textbox"
+        id="canvas"
+        className="canvas flex flex-col items-center px-16 mt-2 bg-white w-full"
       >
-        <textarea
-          name=""
-          id="input-text"
-          cols="30"
-          rows="10"
-          className="Header border-2 border-black h-20 w-96 pt-0 rounded-md"
-          placeholder="text"
-        ></textarea>
-        <button
-          className="bg-slate-600 px-4 py-2 rounded-md mb-2 ml-2"
-          onClick={() => {
-            document.getElementById("input-text").value = "";
-          }}
-        >
-          Clear
-        </button>
-        <div className="btns flex flex-row gap-4">
-          <button
-            className="bg-slate-600 px-4 py-2 rounded-md"
-            onClick={() => {
-              handleAddHead();
-            }}
-          >
-            Add as Heading
-          </button>
-          <button
-            className="bg-slate-600 px-4 py-2 rounded-md"
-            onClick={() => {
-              handleAddSubhead();
-            }}
-          >
-            Add as Subheading
-          </button>
-          <button
-            className="bg-slate-600 px-4 py-2 rounded-md"
-            onClick={() => {
-              handleAddPara();
-            }}
-          >
-            Add as Paragraph
-          </button>
-        </div>
-      </div>
-      <div className="bg-slate-300 w-fit hidden p-3 m-3 rounded" id="img-input">
-        <form onSubmit={handleAddImage} className="flex gap-3">
-          <input
-            type="file"
-            name="file"
-            placeholder="Upload an image"
-            onChange={handleImageChange}
-            className="Header border-2 border-black p-2 rounded"
-            id="input-img"
-          />
-          <button
-            type="submit"
-            className="bg-slate-900 text-white px-5 rounded-lg"
-          >
-            {submitting ? `Uploading..` : `Add Image`}
-          </button>
-        </form>
-      </div>
-
-      <div id="canvas" className="canvas flex flex-col items-center px-16">
         {content}
       </div>
       <button
         onClick={handleBlogSubmit}
-        className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 mt-4 md:mt-10"
+        className="text-white bg-[#0A1128] hover:opacity-80 duration-200 px-3 py-2 rounded-md"
       >
         {submitting ? `Creating..` : `Create`}
       </button>
