@@ -49,7 +49,7 @@ const Hero = () => {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-          Providing a platform for students of VESIT to Learn, Compete & Have Fun through various Technical and Non-technical Events.
+          Explore coding and self-development at QUEST-IT, where our transformative workshops nurture both technical skills and personal growth.Join us on this dual journey of coding excellence and self-discovery! 
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

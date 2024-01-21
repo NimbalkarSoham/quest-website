@@ -2,10 +2,10 @@ import React from "react";
 
 const EventComponent = (props) => {
     return (
-        <div className="w-100 mx-2 my-4 flex flex-col overflow-hidden rounded-lg bg-white shadow-xl md:flex-row transition-transform transform hover:scale-105 cursor-pointer">
+        <div className="w-1/4 lg:w-1/3 mx-2 my-4 flex flex-col overflow-hidden rounded-lg bg-white shadow-xl  transition-transform transform hover:scale-105 cursor-pointer">
             <div className="w-auto md:w-1/2">
                 <img
-                    className="inset-0 h-full object-cover object-center"
+                    className="inset-0 h-full "
                     src={props.data.img}
                     alt={props.data.title} // Add alt attribute for accessibility
                 />

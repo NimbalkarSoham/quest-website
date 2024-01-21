@@ -74,12 +74,12 @@ const Council = () => {
 
       <ul
         role="list"
-        className="mx-5 grid gap-x-8 gap-y-12 sm:grid-cols-3 sm:gap-y-16 xl:col-span-2"
+        className="mx-5 grid gap-x-8 gap-y-12 sm:grid-cols-4 sm:gap-y-16 xl:col-span-2"
       >
         {people?.map((person) => (
           <li key={person._id} className="mx-auto">
-            <div className="flex flex-col items-center gap-x-6">
-              <div className="rounded-full overflow-hidden w-72 h-72">
+            <div className="group shadow-lg p-8 flex flex-col transform transition-transform duration-500 hover:rotate-y-180">
+              <div className="overflow-hidden w-60 h-60 transformable group-hover:rotate-y-180">
                 <Image src={person.image} height={100} width={300} />
               </div>
               <div className="items-center mt-4">
@@ -95,6 +95,7 @@ const Council = () => {
         ))}
       </ul>
     </div>
+   
   );
 };
 

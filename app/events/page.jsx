@@ -18,7 +18,7 @@ const events = () => {
             <h1 className="mt-10 text-center text-5xl font-bold text-black hover:text-indigo-500 transition-colors">
                 EVENTS
             </h1>
-            <div className="w-100 container mx-auto flex flex-col lg:w-4/5">
+            <div className="w-full mx-auto flex flex-wrap items-center ">
                 {events}
             </div>
         </Layout>
