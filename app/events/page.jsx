@@ -15,12 +15,14 @@ const events = () => {
             title="Events"
             content="View all the events conducted by QuestIT Cell"
         >
-            <h1 className="mt-10 text-center text-5xl font-bold text-black hover:text-indigo-500 transition-colors">
+
+            <h1 className="mt-10 text-center mb-10 text-5xl font-bold text-black ">
                 Our Work!
             </h1>
-            <div className="w-full mx-auto flex flex-wrap items-center ">
+            <div className="my-8 space-y-4 grid grid-cols-1 md:grid-cols-5 md:space-y-0 gap-3">
                 {events}
             </div>
+          
         </Layout>
     );
 };
