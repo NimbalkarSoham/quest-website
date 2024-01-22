@@ -1,7 +1,7 @@
 export const eventData = [
     {
         title: "Understanding Machine Learning ",
-        desc: "QuestIT conducted a workshop on 'Understanding Machine Learning'. Machine learning (ML) is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. On Day 1, an introduction to ML was given to the participants by Aditya. The different types of machine learning and various ML algorithms were also discussed. On Day 2, Devdatta explained to the participants the implementation of ML, and two projects which include  Twitter sentiment analysis and Mnist digit Image recognition were also built.",
+        desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",
         date: "5th-6th March 2022",
         time: "11:00 AM - 1:00 PM",
         speaker: "Aditya Kotkar, Devdatta Khoche",
@@ -10,7 +10,7 @@ export const eventData = [
     },
     {
         title: "Understanding Machine Learning ",
-        desc: "QuestIT conducted a workshop on 'Understanding Machine Learning'. Machine learning (ML) is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. On Day 1, an introduction to ML was given to the participants by Aditya. The different types of machine learning and various ML algorithms were also discussed. On Day 2, Devdatta explained to the participants the implementation of ML, and two projects which include  Twitter sentiment analysis and Mnist digit Image recognition were also built.",
+        desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",
         date: "5th-6th March 2022",
         time: "11:00 AM - 1:00 PM",
         speaker: "Aditya Kotkar, Devdatta Khoche",
@@ -19,7 +19,7 @@ export const eventData = [
     },
     {
         title: "Understanding Machine Learning ",
-        desc: "QuestIT conducted a workshop on 'Understanding Machine Learning'. Machine learning (ML) is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. On Day 1, an introduction to ML was given to the participants by Aditya. The different types of machine learning and various ML algorithms were also discussed. On Day 2, Devdatta explained to the participants the implementation of ML, and two projects which include  Twitter sentiment analysis and Mnist digit Image recognition were also built.",
+        desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",
         date: "5th-6th March 2022",
         time: "11:00 AM - 1:00 PM",
         speaker: "Aditya Kotkar, Devdatta Khoche",
@@ -28,7 +28,7 @@ export const eventData = [
     },
     {
         title: "Understanding Machine Learning ",
-        desc: "QuestIT conducted a workshop on 'Understanding Machine Learning'. Machine learning (ML) is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. On Day 1, an introduction to ML was given to the participants by Aditya. The different types of machine learning and various ML algorithms were also discussed. On Day 2, Devdatta explained to the participants the implementation of ML, and two projects which include  Twitter sentiment analysis and Mnist digit Image recognition were also built.",
+        desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",
         date: "5th-6th March 2022",
         time: "11:00 AM - 1:00 PM",
         speaker: "Aditya Kotkar, Devdatta Khoche",
@@ -37,7 +37,7 @@ export const eventData = [
     },
     {
         title: "Understanding Machine Learning ",
-        desc: "QuestIT conducted a workshop on 'Understanding Machine Learning'. Machine learning (ML) is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. On Day 1, an introduction to ML was given to the participants by Aditya. The different types of machine learning and various ML algorithms were also discussed. On Day 2, Devdatta explained to the participants the implementation of ML, and two projects which include  Twitter sentiment analysis and Mnist digit Image recognition were also built.",
+        desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",
         date: "5th-6th March 2022",
         time: "11:00 AM - 1:00 PM",
         speaker: "Aditya Kotkar, Devdatta Khoche",
@@ -46,7 +46,7 @@ export const eventData = [
     },
     {
         title: "Understanding Machine Learning ",
-        desc: "QuestIT conducted a workshop on 'Understanding Machine Learning'. Machine learning (ML) is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. On Day 1, an introduction to ML was given to the participants by Aditya. The different types of machine learning and various ML algorithms were also discussed. On Day 2, Devdatta explained to the participants the implementation of ML, and two projects which include  Twitter sentiment analysis and Mnist digit Image recognition were also built.",
+        desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",
         date: "5th-6th March 2022",
         time: "11:00 AM - 1:00 PM",
         speaker: "Aditya Kotkar, Devdatta Khoche",
@@ -55,7 +55,7 @@ export const eventData = [
     },
     {
         title: "Understanding Machine Learning ",
-        desc: "QuestIT conducted a workshop on 'Understanding Machine Learning'. Machine learning (ML) is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. On Day 1, an introduction to ML was given to the participants by Aditya. The different types of machine learning and various ML algorithms were also discussed. On Day 2, Devdatta explained to the participants the implementation of ML, and two projects which include  Twitter sentiment analysis and Mnist digit Image recognition were also built.",
+        desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",
         date: "5th-6th March 2022",
         time: "11:00 AM - 1:00 PM",
         speaker: "Aditya Kotkar, Devdatta Khoche",

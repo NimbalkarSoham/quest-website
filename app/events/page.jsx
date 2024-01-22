@@ -16,7 +16,7 @@ const events = () => {
             content="View all the events conducted by QuestIT Cell"
         >
             <h1 className="mt-10 text-center text-5xl font-bold text-black hover:text-indigo-500 transition-colors">
-                EVENTS
+                Our Work!
             </h1>
             <div className="w-full mx-auto flex flex-wrap items-center ">
                 {events}

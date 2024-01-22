@@ -43,7 +43,7 @@ const ContactUs = () => {
     }
   };
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-200 min-h-screen">
       <div>
         <nav className="flex items-center justify-between px-6 pt-4 bg-transparent w-full z-50"></nav>
       </div>
