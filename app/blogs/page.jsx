@@ -57,7 +57,7 @@ const blogs = () => {
               <span className="font-bold">Latest Blogs</span>
             </h3>
           </div>
-          <div className="border-none w-full my-3 flex flex-col items-start sm:items-center">
+          <div className="border-none w-full my-3 flex flex-col items-start sm:items-center ">
             <ul className="flex flex-col sm:flex-row gap-x-3">
               {categories.map((category) => (
                 <p
