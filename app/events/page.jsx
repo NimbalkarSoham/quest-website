@@ -19,7 +19,7 @@ const events = () => {
             <h1 className="mt-10 text-center mb-10 text-5xl font-bold text-black ">
                 Our Work!
             </h1>
-            <div className="my-8 space-y-4 grid grid-cols-1 md:grid-cols-5 md:space-y-0 gap-3">
+            <div className="my-8 space-y-4 grid grid-cols-1 md:grid-cols-4 md:space-y-0 gap-3">
                 {events}
             </div>
           

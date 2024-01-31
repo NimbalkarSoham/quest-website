@@ -3,11 +3,11 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="aboutUs pl-36 flex flex-col sm:flex-row bg-gray-200 w-2/3 sm:ml-48 mt-10">
-      <div className="imageDiv p-6 mr-8 flex item-center">
-        <Image src="/images/about.png" height={300} width={400} />
+    <div className="mx-0 mt-10 flex flex-col justify-center items-center sm:flex-row bg-gray-200 md:mx-20">
+      <div className="p-6 mr-8 flex item-center w-1/2">
+        <Image src="/images/about.png" height={500} width={600} />
       </div>
-      <div className="desc py-14 w-3/4 flex flex-col">
+      <div className="desc py-14 w-1/2 flex flex-col">
         <h1 className="text-3xl font-bold mb-5">
           Designed and built by an astonishing creative team.
         </h1>
@@ -22,7 +22,7 @@ const AboutUs = () => {
           especially effective communication, shaping a well-rounded growth
           experience for everyone.
         </p>
-        <button className=" mt-5  bg-[#0A1128] w-24 flex justify-center  text-white py-2 rounded-3xl">
+        <button className="mt-5 w-[120px] bg-[#0A1128] flex justify-center text-white rounded-xl px-5 py-4 md:text-xl">
           AboutUs
         </button>
       </div>
