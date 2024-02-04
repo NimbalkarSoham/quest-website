@@ -58,7 +58,82 @@ const Council = () => {
         </ul>
 
         {/* POSTITIONS */}
-        <div></div>
+        <div>
+          <ul className="flex flex-row justify-around gap-16 text-lg w-fit border-b-gray-400 border-b-[1px] px-8 pb-2 ">
+            <li
+              className={`${
+                post == "Secretary" ? "border-b-blue-950 border-b-2" : ""
+              }`}
+            >
+              <p
+                onClick={() => setupPost("Secretary")}
+                className="cursor-pointer"
+              >
+                Secretary
+              </p>
+            </li>
+            <li
+              className={`${
+                post == "Technical" ? "border-b-blue-950 border-b-2" : ""
+              }`}
+            >
+              <p
+                onClick={() => setupPost("Technical")}
+                className="cursor-pointer"
+              >
+                Technical
+              </p>
+            </li>
+            <li
+              className={`${
+                post == "Graphics" ? "border-b-blue-950 border-b-2" : ""
+              }`}
+            >
+              <p
+                onClick={() => setupPost("Graphics")}
+                className="cursor-pointer"
+              >
+                Graphics
+              </p>
+            </li>
+            <li
+              className={`${
+                post == "Public" ? "border-b-blue-950 border-b-2" : ""
+              }`}
+            >
+              <p
+                onClick={() => setupPost("Public")}
+                className="cursor-pointer text-nowrap"
+              >
+                Public Relations
+              </p>
+            </li>
+            <li
+              className={`${
+                post == "Content" ? "border-b-blue-950 border-b-2" : ""
+              }`}
+            >
+              <p
+                onClick={() => setupPost("Content")}
+                className="cursor-pointer text-nowrap"
+              >
+                Content Writer
+              </p>
+            </li>
+            <li
+              className={`${
+                post == "Media" ? "border-b-blue-950 border-b-2" : ""
+              }`}
+            >
+              <p
+                onClick={() => setupPost("Media")}
+                className="cursor-pointer text-nowrap"
+              >
+                Social Media Manager
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <ul
