@@ -26,6 +26,14 @@ const Council = () => {
     //setRank("B.E");
   };
 
+  const skeleton = () => {
+    return (
+      <div className="flex justify-center items-center mx-auto">
+        <div className="h-[300px] w-[300px] rounded-2xl bg-primary/10" />
+      </div>
+    );
+  };
+
   return (
     <div className="bg-gray-100 py-5 flex flex-col items-center">
       <div>
@@ -59,7 +67,7 @@ const Council = () => {
 
         {/* POSTITIONS */}
         <div>
-          <ul className="flex flex-row justify-around gap-16 text-lg w-fit border-b-gray-400 border-b-[1px] px-8 pb-2 ">
+          <ul className="overflow-x-auto flex flex-row justify-around gap-16 text-lg w-fit border-b-gray-400 border-b-[1px] px-8 pb-2 ">
             <li
               className={`${
                 post == "Secretary" ? "border-b-blue-950 border-b-2" : ""
@@ -140,57 +148,65 @@ const Council = () => {
         role="list"
         className="mx-5 grid gap-x-24 gap-y-12 sm:grid-cols-3 sm:gap-y-16 xl:col-span-2"
       >
-        {people
-          ?.filter(
-            (person) => person.Post.includes(post) && person.Year === rank
-          )
-          .map((person) => (
-            <li className="group h-[300px] w-[300px] relative [perspective:1000px]">
-              <div className="relative h-full w-full transition-all rounded-3xl duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <div className="hover:cursor-pointer flex justify-center items-center h-full overflow-hidden w-full absolute inset-0 rounded-3xl">
-                  <Image
-                    className="h-full w-full object-cover rounded-3xl"
-                    src={person.image}
-                    alt="TEXT IMAGE"
-                    height={100}
-                    width={300}
-                  />
-                </div>
+        {people ? (
+          people
+            ?.filter(
+              (person) => person.Post.includes(post) && person.Year === rank
+            )
+            .map((person) => (
+              <li className="group h-[300px] w-[300px] relative [perspective:1000px]">
+                <div className="relative h-full w-full transition-all rounded-3xl duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  <div className="hover:cursor-pointer flex justify-center items-center h-full overflow-hidden w-full absolute inset-0 rounded-3xl">
+                    <Image
+                      className="h-full w-full object-cover rounded-3xl"
+                      src={person.image}
+                      alt="TEXT IMAGE"
+                      height={100}
+                      width={300}
+                    />
+                  </div>
 
-                <div className="absolute rounded-3xl inset-0 items-center bg-black/80 h-full w-full [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                  <div className="flex flex-col items-center justify-center mx-10 mt-20">
-                    <h3 className="text-white text-2xl text-bold">
-                      {person.Name}
-                    </h3>
-                    <p className="text-sm text-center font-semibold leading-6 text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Illo obcaecati aliquam praesentium, eaque quae soluta.
-                    </p>
-                    <div className="icons flex flex-row gap-5 mt-5">
-                      <a
-                        href={person.LinkedIn || ""}
-                        className="bg-[#212A43] p-2 rounded-xl"
-                      >
-                        <Image src={"/1.png"} width={25} height={25} />
-                      </a>
-                      <a
-                        href={person.LinkedIn || ""}
-                        className="bg-[#212A43] p-2 rounded-xl"
-                      >
-                        <Image src={"/2.png"} width={25} height={25} />
-                      </a>
-                      <a
-                        href={person.LinkedIn || ""}
-                        className="bg-[#212A43] p-2 rounded-xl"
-                      >
-                        <Image src={"/3.png"} width={25} height={25} />
-                      </a>
+                  <div className="absolute rounded-3xl inset-0 items-center bg-black/80 h-full w-full [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                    <div className="flex flex-col items-center justify-center mx-10 mt-20">
+                      <h3 className="text-white text-2xl text-bold">
+                        {person.Name}
+                      </h3>
+                      <p className="text-sm text-center font-semibold leading-6 text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Illo obcaecati aliquam praesentium, eaque quae
+                        soluta.
+                      </p>
+                      <div className="icons flex flex-row gap-5 mt-5">
+                        <a
+                          href={person.LinkedIn || ""}
+                          className="bg-[#212A43] p-2 rounded-xl"
+                        >
+                          <Image src={"/1.png"} width={25} height={25} />
+                        </a>
+                        <a
+                          href={person.LinkedIn || ""}
+                          className="bg-[#212A43] p-2 rounded-xl"
+                        >
+                          <Image src={"/2.png"} width={25} height={25} />
+                        </a>
+                        <a
+                          href={person.LinkedIn || ""}
+                          className="bg-[#212A43] p-2 rounded-xl"
+                        >
+                          <Image src={"/3.png"} width={25} height={25} />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          ))}
+              </li>
+            ))
+        ) : (
+          <div className="mx-auto grid gap-x-24 gap-y-12 sm:grid-cols-3 sm:gap-y-16 xl:col-span-2">
+            {skeleton()}
+            {skeleton()}
+          </div>
+        )}
       </ul>
 
       <ul className="ml-20 flex flex-col justify-center"></ul>
