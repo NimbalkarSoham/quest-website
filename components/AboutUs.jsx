@@ -22,9 +22,9 @@ const AboutUs = () => {
           especially effective communication, shaping a well-rounded growth
           experience for everyone.
         </p>
-        <button className="mt-5 w-[120px] bg-[#0A1128] flex justify-center text-white rounded-xl px-5 py-4 md:text-xl">
+        {/* <button className="mt-5 w-[120px] bg-[#0A1128] flex justify-center text-white rounded-xl px-5 py-4 md:text-xl">
           AboutUs
-        </button>
+        </button> */}
       </div>
     </div>
   );

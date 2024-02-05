@@ -184,7 +184,7 @@ const Council = () => {
                           <Image src={"/1.png"} width={25} height={25} />
                         </a>
                         <a
-                          href={person.LinkedIn || ""}
+                          href={person.GitHub || ""}
                           className="bg-[#212A43] p-2 rounded-xl"
                         >
                           <Image src={"/2.png"} width={25} height={25} />
@@ -193,7 +193,7 @@ const Council = () => {
                           href={person.LinkedIn || ""}
                           className="bg-[#212A43] p-2 rounded-xl"
                         >
-                          <Image src={"/3.png"} width={25} height={25} />
+                          <Image src={"/4.png"} width={25} height={25} />
                         </a>
                       </div>
                     </div>
