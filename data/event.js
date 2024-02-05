@@ -1,13 +1,5 @@
 export const eventData = [
-    {
-        title: "Understanding Machine Learning ",
-        desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",
-        date: "5th-6th March 2022",
-        time: "11:00 AM - 1:00 PM",
-        speaker: "Aditya Kotkar, Devdatta Khoche",
-        venue: "Google Meet",
-        img: "https://res.cloudinary.com/sarveshp46/image/upload/v1663313999/Event_Name_qi9gre.png",
-    },
+   
     {
         title: "Understanding Machine Learning ",
         desc: "QuestIT's 'Understanding Machine Learning' workshop covered ML basics on Day 1 with Aditya introducing types and algorithms. Day 2, led by Devdatta, delved into ML implementation through projects on Twitter sentiment analysis and Mnist digit image recognition.",

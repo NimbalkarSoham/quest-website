@@ -2,10 +2,10 @@ import React from "react";
 
 const EventComponent = (props) => {
     return (
-        <div className="flex flex-col max-h-[470px] my-3 bg-white mx-auto rounded-lg hover:scale-105 duration-200 ease-in-out md:w-[300px]">
+        <div className="flex my-16 mt-0 flex-col max-h-[470px]  bg-white mx-auto rounded-lg hover:scale-105 duration-200 ease-in-out md:w-[350px]">
             <div className="w-auto md:w-1/2">
                 <img
-                    className="rounded-t-lg max-w-[300px] hover:brightness-75 duration-200 md:w-[800px] md:h-[200px] md:object-cover"
+                    className="rounded-t-lg max-w-[350px] hover:brightness-75 duration-200 md:w-[800px] md:h-[200px] md:object-cover"
                     src={props.data.img}
                     alt={props.data.title} // Add alt attribute for accessibility
                 />
