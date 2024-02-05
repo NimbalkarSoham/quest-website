@@ -2,6 +2,7 @@
 
 import BlogCard from "@/components/BlogCard";
 import ImageSlider from "@/components/ImageSlider";
+import Loader from "@/components/Loader";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -82,7 +83,7 @@ const blogs = () => {
       </div>
     );
   } else {
-    return <></>;
+    return <Loader />;
   }
 };
 
